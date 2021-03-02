@@ -59,7 +59,7 @@ fetch(`https://api.github.com/users/${search.value}`)
 }
 
 if (url != '') {
-  search.value = url.split('=');
+  search.value = url.split('=')[1];
   clickButton();
 } 
 
