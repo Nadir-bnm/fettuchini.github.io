@@ -1,4 +1,4 @@
-let url = window.location.href;
+let url = window.location.search;
 let header = document.getElementById('header');
 let search = document.getElementById('header__request');
 let button = document.getElementById('header__button');
