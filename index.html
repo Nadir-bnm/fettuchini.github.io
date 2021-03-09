@@ -7,23 +7,28 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class='visible' id='preloader'></div>
-  <header class='header' id='header'>
-    <input class='header__request' type='text' id='header__request' placeholder='Enter name to search...'>
-    <button class='header__button' type='submit' id='header__button' for='header__request'>Search</button>
-  </header>
-  <main class='main' id='main'>
-    <p>Date</p>
-    <input class='main__date' type='text' id='date'>
-    <img class='main__photo' src='' id='main__photo'>
-    <h1>Name</h1>
-    <input class='main__name' type='text' id='main__name'>
-    <h1>Bio</h1>
-    <textarea class='main__bio' type='text' id='bio' rows='5'></textarea>
-  </main>
-  <footer class='footer' id='footer'>
-    <a class='footer__link' href='#' id='footer__link'></a>
-  </footer>
+  <div id='preloader' class='preloader'>
+    <div class='caption'>
+      <div class='cube-loader'>
+        <div class='cube loader-1'></div>
+        <div class='cube loader-2'></div>
+        <div class='cube loader-4'></div>
+        <div class='cube loader-3'></div>
+      </div>
+    </div>
+  </div>
+  <div id='wrapper' class='wrapper'>
+    <div class='cover hidden' id='cover'>
+      <img class='photo' src='' id='photo'>
+      <h1>Name</h1>
+      <input class='input' type='text' id='name'>
+      <h1>Bio</h1>
+      <textarea class='bio' type='text' id='bio' rows='5'></textarea>
+      <h1>Search date</h1>
+      <input class='input' type='text' id='date'>
+      <a class='link' href='' id='link'>Profile Link</a>
+    </div>
+  </div>
   <script src='script.js' type='text/javascript'></script>
 </body>
 </html>
